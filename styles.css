@@ -9,7 +9,7 @@ body {
   background: #12100c;
   width: 100%;
 }
-
+/*! NAV BAR */
 .header {
   font-family: "satoshimedium";
   position: fixed;
@@ -53,17 +53,117 @@ body {
   cursor: pointer;
   display: none;
 }
-.ri-close-line{
+.ri-close-line {
   margin-right: 5px;
 }
-#menu-icon{
+#menu-icon {
   display: flex;
 }
-.star-2-nav{
+.star-2-nav {
   display: none;
 }
+
+/*? PART ONE */
+#section1 {
+  margin-top: 136px;
+}
+#section1 .texte-page-section1 {
+  margin-left: 24px;
+  width: 327px;
+}
+#section1 .texte-page-section1 h1 {
+  color: #fff4eb;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Angel rhapsody";
+  font-weight: normal;
+  font-size: 80px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+#section1 .texte-page-section1 h1 span {
+  color: #db9f6a;
+}
+
+.btn-section1 h2 {
+  color: #12100c;
+  font-family: "satoshimedium";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.89px;
+}
+
+.btn-section1 {
+  margin: 40px 0 0 24px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-container-inf {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 244px;
+  text-align: center;
+  margin: 0 6px;
+}
+.texte-btn-div {
+  position: absolute;
+  width: 100%;
+}
+
+.days-times{
+  display: flex;
+  align-items: center;
+  margin: 40px 0 0 24px;
+}
+.days-times .class-icone-times i {
+  font-size: 24px;
+  border-radius: 8px;
+  background: #db9f6a;
+  padding: 14px;
+}
+
+.times-container{
+  margin-left: 24px;
+}
+
+.times-container .mon-fri{
+margin-bottom: 12px;
+}
+.times-container .mon-fri, .sat-sun{
+  display: flex;
+  align-items: center;
+}
+.times-container h2{
+  color: #DB9F6A;
+  font-family: "satoshimedium";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+.times-container h3{
+  color: #FFF;
+  font-family: "satoshimedium";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  margin-left: 12px;
+}
+
+
+
 /* BREAKPOINT */
 
+/*! NAV BAR */
 @media (max-width: 1285px) {
   .header {
     padding: 12px 2%;
@@ -81,10 +181,10 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .star-1-nav{
+  .star-1-nav {
     display: none;
   }
-  .star-2-nav{
+  .star-2-nav {
     display: block;
   }
   .header {
@@ -145,3 +245,5 @@ body {
     transition-delay: calc(0.15s * var(--i));
   }
 }
+
+/*? PART ONE */
