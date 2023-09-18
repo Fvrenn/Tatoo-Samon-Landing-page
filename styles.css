@@ -116,7 +116,7 @@ body {
   width: 100%;
 }
 
-.days-times{
+.days-times {
   display: flex;
   align-items: center;
   margin: 40px 0 0 24px;
@@ -128,19 +128,20 @@ body {
   padding: 14px;
 }
 
-.times-container{
+.times-container {
   margin-left: 24px;
 }
 
-.times-container .mon-fri{
-margin-bottom: 12px;
+.times-container .mon-fri {
+  margin-bottom: 12px;
 }
-.times-container .mon-fri, .sat-sun{
+.times-container .mon-fri,
+.sat-sun {
   display: flex;
   align-items: center;
 }
-.times-container h2{
-  color: #DB9F6A;
+.times-container h2 {
+  color: #db9f6a;
   font-family: "satoshimedium";
   font-size: 18px;
   font-style: normal;
@@ -148,8 +149,8 @@ margin-bottom: 12px;
   line-height: normal;
   letter-spacing: -0.36px;
 }
-.times-container h3{
-  color: #FFF;
+.times-container h3 {
+  color: #fff;
   font-family: "satoshimedium";
   font-size: 18px;
   font-style: normal;
@@ -159,12 +160,115 @@ margin-bottom: 12px;
   margin-left: 12px;
 }
 
+#section2 {
+  margin-top: 80px !important;
+  background: rgba(42, 39, 34, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 48px 12%;
+}
+#section2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+#section2 ul li {
+  color: #fff;
+  font-family: "satoshimedium";
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#section2 ul li img {
+  margin-right: 12px;
+}
+
+.item-liste6 {
+  display: none !important;
+}
+
+#section4 h1 {
+  color: #fff4eb;
+  font-family: "Angel rhapsody";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  max-width: 263px;
+  margin-bottom: 27px;
+}
+
+#section4 .cadre-container {
+  border-radius: 32px;
+  background-color: #1e1c17;
+  padding: 32px 32px 0 32px;
+  margin: 80px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 485px;
+  background-image: url(/ressources/images/particl-effect/Vector.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 60% cover;
+}
+
+#section4 img {
+  max-width: 243px;
+  min-width: 10%;
+}
+
+#section5 h1 {
+  font-family: "Angel rhapsody";
+  color: #12100c;
+  text-align: right;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.44px;
+}
+
+#section5 .cadre-container {
+  border-radius: 32px;
+  background: #fff4eb;
+  padding: 32px 32px 0 32px;
+  margin: 32px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  max-width: 485px;
+  min-height: 353px;
+}
+#section5 .cadre-container .container-img{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section5 img {
+  max-width: 243px;
+  min-width: 10%;
+}
 
 /* BREAKPOINT */
 
 /*! NAV BAR */
 @media (max-width: 1285px) {
+  #section2 ul li {
+    font-size: 25px;
+  }
+
+  #section2 ul li img {
+    width: 20px;
+  }
+
   .header {
     padding: 12px 2%;
   }
@@ -179,7 +283,20 @@ margin-bottom: 12px;
     left: 5%;
     right: 5%;
   }
+
+  #section2 {
+    padding: 15px 8%;
+  }
+
+  #section2 ul li {
+    font-size: 25px;
+  }
+
+  #section2 ul li img {
+    width: 20px;
+  }
 }
+
 @media (max-width: 768px) {
   .star-1-nav {
     display: none;
@@ -210,14 +327,16 @@ margin-bottom: 12px;
   #check:checked ~ .icons #close-icon {
     display: block;
   }
+
   .navbar {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     height: 0;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(50px);
+    border-radius: 32px;
+    background: rgba(42, 39, 34, 0.986);
+    backdrop-filter: blur(5px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     transition: 0.2s ease;
     overflow: hidden;
@@ -243,6 +362,25 @@ margin-bottom: 12px;
     transform: translateY(0px);
     opacity: 1;
     transition-delay: calc(0.15s * var(--i));
+  }
+
+  #section2 {
+    display: flex;
+    justify-content: center;
+    margin: 8% 0;
+  }
+  #section2 ul {
+    columns: 2;
+    display: block;
+    line-height: 44px;
+  }
+
+  .item-liste6 {
+    display: block !important;
+  }
+
+  #section2 ul li {
+    font-size: 19px;
   }
 }
 
