@@ -9,6 +9,10 @@ body {
   background: #12100c;
   width: 100%;
 }
+
+a{
+  text-decoration: none;
+}
 /*! NAV BAR */
 .header {
   font-family: "satoshimedium";
@@ -221,7 +225,7 @@ body {
   min-width: 10%;
 }
 
-#section5 h1 {
+#section5 h1,#section7 h1  {
   font-family: "Angel rhapsody";
   color: #12100c;
   text-align: right;
@@ -232,7 +236,7 @@ body {
   letter-spacing: 1.44px;
 }
 
-#section5 .cadre-container {
+#section5 .cadre-container, #section7 .cadre-container {
   border-radius: 32px;
   background: #fff4eb;
   padding: 32px 32px 0 32px;
@@ -244,7 +248,7 @@ body {
   max-width: 485px;
   min-height: 353px;
 }
-#section5 .cadre-container .container-img{
+#section5 .cadre-container .container-img, #section7 .cadre-container .container-img {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -256,6 +260,77 @@ body {
   max-width: 243px;
   min-width: 10%;
 }
+
+#section7 img {
+  max-width: 243px;
+  min-width: 9%;
+  max-height: 280px;
+}
+
+#section6 h1 {
+  color: #fff4eb;
+  font-family: "Angel rhapsody";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  max-width: 381px;
+}
+
+#section6 .cadre-container {
+  border-radius: 32px;
+  background: #1e1c17;
+ 
+  margin: 32px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 485px;
+  min-height: 566px;
+}
+#section6 .cadre-container .container-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section6 img {
+  width: 100%;
+}
+#section6 p {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "satoshimedium";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.28px;
+  min-width: 263px;
+  margin-top: 16px ;
+}
+
+#section6 a {
+  color: #483524;
+  font-family: "satoshimedium";
+  font-size: 14px;
+  border-radius: 12px;
+  background-color: #db9f6a;
+  padding: 20px 32px ;
+  align-items: center;
+  margin-top: 24px;
+}
+
+
+#section6 .button-container{
+  margin-top: 44px;
+}
+
+.texte-div {
+  padding: 32px 32px 52px 32px;
+}
+
 
 /* BREAKPOINT */
 
